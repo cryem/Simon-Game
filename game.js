@@ -51,6 +51,7 @@ function animatePress(currentColour) {
 $("h1#level-title").on("click", function () {
   if (level === 0) {
     nextSequence();
+    $("h2.score-title").addClass("hide");
   }
 });
 
@@ -71,7 +72,9 @@ function checkAnswer(currentLevel) {
         $("body").removeClass("game-over").dequeue();
       });
     $("h1#level-title").text("Game Over, Press Here to Restart");
-    $("h2.score-title").removeClass("hide").text("Your Score:" + level);
+    $("h2.score-title")
+      .removeClass("hide")
+      .text("Your Score:" + level);
     startOver();
   }
 }
