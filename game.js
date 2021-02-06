@@ -51,6 +51,7 @@ function animatePress(currentColour) {
 $("h1#level-title").on("click", function () {
   if (level === 0) {
     nextSequence();
+    //Remove score text when game starts again
     $("h2.score-title").addClass("hide");
   }
 });
