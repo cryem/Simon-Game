@@ -1,13 +1,19 @@
 body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   text-align: center;
-  background-color: #011F3F;
+  background-color: #011f3f;
 }
 
 #level-title {
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 3rem;
-  margin:  5%;
-  color: #FEF2BF;
+  margin: 5%;
+  color: #fef2bf;
 }
 
 .container {
@@ -51,29 +57,28 @@ body {
   background-color: grey;
 }
 
-.hide{
+.hide {
   visibility: hidden;
 }
 
-.score-title{
-  font-family: 'Press Start 2P', cursive;
+.score-title {
+  font-family: "Press Start 2P", cursive;
   font-size: 3rem;
-  margin:  5%;
-  color: #FEF2BF;
+  margin: 5%;
+  color: #fef2bf;
 }
 
-@media (max-width: 1028px){
+@media (max-width: 1028px) {
   #level-title {
     font-size: 4rem;
   }
-  .container {   
+  .container {
     width: 100%;
     margin: 30% auto;
   }
 
-  .btn {    
+  .btn {
     height: 350px;
-    width: 350px;   
+    width: 350px;
   }
-  
 }
